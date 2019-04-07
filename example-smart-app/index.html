@@ -6,6 +6,7 @@
     <title>Example-SMART-App</title>
 
     <link rel='stylesheet' type='text/css' href='./src/css/example-smart-app.css'>
+    <link rel='stylesheet' type='text/css' href='./src/css/dropzone.css'>
     <!--
       Temporarily disable cerner-smart-embeddable-lib
       <link rel='stylesheet' type='text/css' href='./lib/css/cerner-smart-embeddable-lib-1.0.0.min.css'>
@@ -75,6 +76,7 @@
 
     <!-- Application-level javascript-->
     <script src='./src/js/example-smart-app.js'></script>
+    <script src='./src/js/dropzone.js'></script>
 
     <!-- FHIR Client JS Library -->
     <script src='./lib/js/fhir-client-v0.1.12.js'></script>
@@ -97,5 +99,11 @@
         }
       );
     </script>
+    <p>
+     This is the most minimal example of Dropzone. The upload in this example
+     doesn't work, because there is no actual server to handle the file upload.
+   </p>
+   <!-- Change /upload-target to your upload address -->
+    <form action="/upload-target" class="dropzone"></form>
   </body>
 </html>
